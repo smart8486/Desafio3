@@ -1,0 +1,14 @@
+.sliderLayoutContainer--shelf {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 100px;
+    background-color: #303030;
+}
+
+.caretIcon--carousel {
+    color: #ffffff;
+}
+
+.paginationDot--isActive {
+    background-color: #59ff00;
+}

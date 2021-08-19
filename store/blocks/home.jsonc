@@ -1,0 +1,268 @@
+{
+  "store.home": {
+    "blocks": [
+      /*
+      * Componente Tab Layout para separar os produtos por categoria
+      */
+      "tab-layout#home", 
+      /*
+      * Bloco list-context chamando o child slider layout 
+      * para mostrar os produtos em destaque
+      */
+      "list-context.image-list#upmedal",
+      /*
+      * Bloco Sticky-Layout para fixar links na página
+      */
+      "sticky-layout#fixed-button",
+      /*
+      * fold para melhorar o desempenho da página
+      */
+      "__fold__.experimentalLazyAssets",
+      /*
+      * Bloco list-context chamando o child product-list 
+      * para mostrar os produtos em carousel
+      */
+      "list-context.product-list#home"
+    ]
+  },
+  // Inicio TAB-LAYOUT
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "home1"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2",
+      "tab-list.item#home3",
+      "tab-list.item#home4",
+      "tab-list.item#home5",
+      "tab-list.item#home6",
+      "tab-list.item#home7",
+      "tab-list.item#home8",
+      "tab-list.item#home9"
+    ]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "home1",
+      "label": "PROMOÇÃO",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "home2",
+      "label": "CORINTHIANS"
+    }
+  },
+  "tab-list.item#home3": {
+    "props": {
+      "tabId": "home3",
+      "label": "PALMEIRAS"
+    }
+  },
+  "tab-list.item#home4": {
+    "props": {
+      "tabId": "home4",
+      "label": "SIGNOS"
+    }
+  },
+  "tab-list.item#home5": {
+    "props": {
+      "tabId": "home5",
+      "label": "DIVERTIDOS"
+    }
+  },
+  "tab-list.item#home6": {
+    "props": {
+      "tabId": "home6",
+      "label": "7 Maravilhas"
+    }
+  },
+   "tab-list.item#home7": {
+      "props": {
+        "tabId": "home7",
+        "label": "GUERREIROS"
+    }
+  },
+    "tab-list.item#home8": {
+      "props": {
+        "tabId": "home8",
+        "label": "ÁLBUM 1"
+    }
+  },
+      "tab-list.item#home9": {
+       "props": {
+         "tabId": "home9",
+         "label": "ÁLBUM 2"
+    }
+  },
+  "tab-content#home": {
+      "children": [
+        "tab-content.item#home1",
+        "tab-content.item#home2",
+        "tab-content.item#home3",
+        "tab-content.item#home4",
+        "tab-content.item#home5",
+        "tab-content.item#home6",
+        "tab-content.item#home7",
+        "tab-content.item#home8",
+        "tab-content.item#home9"
+      ]
+    },
+  "tab-content.item#home1": {
+    "children": [
+    ],
+    "props": {
+      "tabId": "home1"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": [
+    ],
+    "props": {
+      "tabId": "home2"
+    }
+  },
+  "tab-content.item#home3": {
+    "children": [
+    ],
+    "props": {
+      "tabId": "home3"
+    }
+  },
+  "tab-content.item#home4": {
+    "children": [
+    ],
+    "props": {
+      "tabId": "home4"
+    }
+  },
+  "tab-content.item#home5": {
+    "children": [
+    ],
+    "props": {
+      "tabId": "home5"
+    }
+  },
+  "tab-content.item#home6": {
+    "children": [
+    ],
+    "props": {
+      "tabId": "home6"
+    }
+  }, 
+  "tab-content.item#home7": {
+    "children": [
+    ],
+    "props": {
+        "tabId": "home7"
+    }
+  },    
+    "tab-content.item#home8": {
+     "children": [
+    ],
+     "props": {
+          "tabId": "home8"
+    }
+  },  
+    "tab-content.item#home9": {
+     "children": [
+      ],
+     "props": {
+           "tabId": "home9"
+     } 
+  },
+  // Fim TAB-LAYOUT
+
+  // Inicio SLIDER-LAYOUT
+  "list-context.image-list#upmedal": {
+    "children": ["slider-layout#upmedal-images"],
+    "props": {
+      "height": 350,
+      "images": [
+        {
+          "image": "https://raw.githubusercontent.com/ifabianoi/desafio-store-upmedal/master/styles/image/BANNER-WOOD.png"
+        },
+        {
+          "image": "https://raw.githubusercontent.com/ifabianoi/desafio-store-upmedal/master/styles/image/BANNER-GUERREIROS.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#upmedal-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  // Fim SLIDER-LAYOUT
+
+  // Inicio STICKY-LAYOUT
+  "sticky-layout#fixed-button": {
+    "props": {
+      "position": "bottom"
+    },
+    "children": ["flex-layout.row#fixed-button"]
+  },
+  "flex-layout.row#fixed-button": {
+    "props": {
+      "marginTop": 0
+    },
+    "children": ["login"]
+  },
+  // Fim STICKY-LAYOUT
+
+  // Inicio PRODUCT-LIST
+  "list-context.product-list#home": {
+		"blocks": ["product-summary.shelf#home"],
+		"children": ["slider-layout#products"],
+		"props": {
+			"category": "20",
+			"hideUnavailableItems": true,
+			"blockClass": "products"
+		}
+	},
+
+	"slider-layout#products": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 2,
+				"phone": 2
+			},
+			"infinite": true,
+			"showNavigationArrows": "false",
+			"blockClass": "products",
+			"autoplay": {
+				"timeout": 5000,
+				"stopOnHover": true
+			}
+		}
+	},
+	"product-summary.shelf#home": {
+		"children": [
+			"product-summary-name",
+			"product-summary-image",
+			"product-selling-price",
+			"product-summary-buy-button"
+		],
+		"props": {
+			"blockClass": "productsshelf"
+		}
+	}
+  // Fim PRODUCT-LIST
+}

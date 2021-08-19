@@ -1,0 +1,30 @@
+.Container {
+    background-color: #424242;
+}
+
+.searchBarContainer {
+    background-color: #212121;
+    height: 38px;
+}
+
+.searchBarContainer {
+    background-color: #212121;
+    height: 38px;
+    width: 550px;
+}
+
+.searchIcon {
+    color: #ffffff;
+}
+
+.imageElement--carousel {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-left: 10%;    
+    padding-right: 10%;    
+    border-color: #303030;
+    background-color: #303030;
+}
